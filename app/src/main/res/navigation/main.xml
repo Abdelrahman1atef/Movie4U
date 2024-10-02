@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/home_page">
+
+    <fragment
+        android:id="@+id/home_page"
+        android:name="com.example.movieproject.presentation.home.page_home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home_page_to_fragmentSeeMore"
+            app:destination="@id/fragmentSeeMore" />
+        <action
+            android:id="@+id/action_home_page_to_fragmentMovieDetails"
+            app:destination="@id/fragmentMovieDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/top_rated"
+        android:name="com.example.movieproject.presentation.home.page_topRated.TopRatedFragment"
+        android:label="fragment_top_rated"
+        tools:layout="@layout/fragment_top_rated" >
+
+        <action
+            android:id="@+id/action_top_rated_to_fragmentSeeMore"
+            app:destination="@id/fragmentSeeMore" />
+        <action
+            android:id="@+id/action_top_rated_to_fragmentMovieDetails"
+            app:destination="@id/fragmentMovieDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSeeMore"
+        android:name="com.example.movieproject.presentation.home.page_seeMore.FragmentSeeMore"
+        android:label="fragment_see_more"
+        tools:layout="@layout/fragment_see_more" >
+        <action
+            android:id="@+id/action_fragmentSeeMore_to_fragmentMovieDetails"
+            app:destination="@id/fragmentMovieDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentMovieDetails"
+        android:name="com.example.movieproject.presentation.home.page_movieDetails.FragmentMovieDetails"
+        android:label="fragment_movie_details"
+        tools:layout="@layout/fragment_movie_details" />
+</navigation>

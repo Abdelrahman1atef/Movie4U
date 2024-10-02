@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/_110sdp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/_14sdp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivMoviePic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_163sdp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shapeAppearance="@style/roundedImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tvMovieTitle"
+        style="@style/MovieTitleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:ellipsize="end"
+        android:lines="2"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivMoviePic"
+        tools:text="Spiderman: No Way Home" />
+    <TextView
+        android:id="@+id/tvRatingTitleStyle"
+        style="@style/RatingTitleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/star"
+        android:drawablePadding="@dimen/_5sdp"
+        android:padding="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMovieTitle"
+        tools:text="9.1/10 IMDP" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

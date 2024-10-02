@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.home.page_movieDetails.FragmentMovieDetails">
+
+    <ImageView
+        android:id="@+id/ivMoviePic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_243sdp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_200sdp"
+        android:background="@drawable/movie_details_style_border"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/_24sdp"
+        android:paddingTop="@dimen/_24sdp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvMovieTitle"
+                style="@style/MovieTitleStyleDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Spiderman: No Way Home" />
+
+            <TextView
+                android:id="@+id/tvRatingTitle"
+                style="@style/RatingTitleStyleDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/star"
+                android:drawablePadding="@dimen/_5sdp"
+                android:padding="@dimen/_5sdp"
+                tools:text="9.1/10 IMDP" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:text="@string/description" />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                style="@style/RatingTitleStyleDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="A listless Wade Wilson toils away in civilian life with his days as the morally flexible mercenary, Deadpool, behind him. But when his homeworld faces an existential threat, Wade must reluctantly suit-up again with an even more reluctant Wolverine." />
+
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+            <include
+                android:id="@+id/cast_layout"
+                layout="@layout/cast_layout" />
+    </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

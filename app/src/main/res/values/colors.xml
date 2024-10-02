@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#110E47</color>
+    <color name="bg">#F2F2F2</color>
+    <color name="stroke">#AAA9B1</color>
+    <color name="ratingColor">#9C9C9C</color>
+    <color name="Dprimary">#67e8f9</color>
+    <color name="Dstroke">#AAA9B1</color>
+    <color name="DratingColor">#9C9C9C</color>
+
+
+</resources>

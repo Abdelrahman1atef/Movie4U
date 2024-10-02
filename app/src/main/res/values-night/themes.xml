@@ -1,0 +1,52 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MovieProject" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+    <style name="roundedImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10%</item>
+    </style>
+
+    <style name="AppTitleStyle">
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textSize">@dimen/_19ssp</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TitleStyle">
+        <item name="android:textColor">@color/Dprimary</item>
+        <item name="android:textSize">@dimen/_19ssp</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="MovieTitleStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:fontFamily">@font/mulish_extrabold</item>
+    </style>
+    <style name="MovieTitleStyleDetails">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_22ssp</item>
+        <item name="android:fontFamily">@font/mulish_bold</item>
+    </style>
+
+    <style name="RatingTitleStyle">
+        <item name="android:textColor">@color/ratingColor</item>
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="android:fontFamily">@font/mulish_regular</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="RatingTitleStyleDetails">
+        <item name="android:textColor">@color/ratingColor</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:fontFamily">@font/mulish_regular</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="ButtonStyle">
+        <item name="backgroundTint">@color/Dprimary</item>
+    </style>
+</resources>
